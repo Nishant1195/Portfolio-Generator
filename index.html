@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index-style.css">
+    <title>Porfolio Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="pf-gen">Porfolio Generator for Web Developer</h1>
+        <form action="">
+            <h2>Personal Information</h2>
+            <div class="Information">
+            <label for="name">Name: <input type="text" id="name" name=""></label><br>
+            <label for="descrip">Description<textarea id="descrip" name="" cols="30" rows="5"></textarea></label>
+            </div>
+            <h2>Social Media Id/Links</h2>
+            <div class="Social-Links">
+                <label for="linkedin-link">Linked-In Link<input type="url" id="linkedin-link"></label>
+                <label for="github-link">Github Link<input type="url" id="github-link"></label>
+                <label for="twitter-link">Twitter Link<input type="url" id="twitter-link"></label>
+                <label for="instagram-link">Instagram Link<input type="url" id="instagram-link"></label>
+            </div>
+            <h2>Optional Links</h2>
+            <div class="navigation-links">
+                <label for="Service-link">Service Page Link<input type="url" id="Service-link"></label>
+                <label for="Skill-link">Skill Page Link<input type="url" id="Skill-link"></label>
+                <label for="education-link">Education Page Link<input type="url" id="education-link"></label>
+                <label for="experience-link">Experience Page Link<input type="url" id="experience-link"></label>
+                <label for="contact-link">Contact Page Link<input type="url" id="contact-link"></label>
+            </div>
+            <button type="button" id="GP" onclick="saveData()">Generate Portfolio</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

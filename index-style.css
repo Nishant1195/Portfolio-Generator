@@ -1,0 +1,121 @@
+/* index-style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1.pf-gen {
+    font-size: 3rem;
+    color: #b74b4b;
+    margin-bottom: 2rem;
+}
+
+form {
+    background-color: #161616;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(183, 75, 75, 0.4);
+    width: 100%;
+    max-width: 1200px; /* Adjust the max-width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #b74b4b;
+    margin: 2rem 0 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+input[type="text"],
+textarea, input[type="url"] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: #1e1e1e;
+    border-radius: 0.5rem;
+    color: white;
+    border: 1px solid #b74b4b;
+    margin-top: 0.5rem;
+    transition: 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus, input[type="url"]:focus {
+    border-color: #b74b4b;
+    background-color: #292929;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: black;
+    background-color: #b74b4b;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 2rem;
+}
+
+button:hover {
+    background-color: white;
+    color: #b74b4b;
+    box-shadow: 0 0 10px #b74b4b;
+}
+
+
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 2rem;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    h1.pf-gen {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
